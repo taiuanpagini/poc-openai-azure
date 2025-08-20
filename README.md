@@ -66,7 +66,7 @@ Extrai entidades de uma lista de itens em lote utilizando Azure OpenAI.
 
 - **O retorno vai variar conforme o prompt e também o schema desejado**
 
-⚙️ Tecnologias Utilizadas
+## ⚙️ Tecnologias Utilizadas
 - .NET 8 – Backend e APIs
 
 C# – Linguagem principal
@@ -74,7 +74,7 @@ C# – Linguagem principal
 - REST API – Comunicação entre sistemas
 - Application Insights (opcional) – Observabilidade
 
-🛠️ Como Clonar e Executar
+## 🛠️ Como Clonar e Executar
 1. Clonar o repositório
 
 - git clone https://github.com/seu-repositorio/azure-openai-poc.git
@@ -108,7 +108,7 @@ curl -X POST http://localhost:5000/extractBatchAzure \
   -H "Content-Type: application/json" \
   -d '{"items": ["Dipirona 500mg comprimido", "Luvas M"]}'
 
-📌 Observações
+## 📌 Observações
 - O parâmetro temperature está configurado para controlar a "criatividade" do modelo:
 
 - Valores baixos (ex: 0.0 – 0.3): respostas mais determinísticas.
@@ -121,6 +121,6 @@ curl -X POST http://localhost:5000/extractBatchAzure \
 
 - É recomendado monitorar o uso de tokens para evitar estouro de limite em prompts muito grandes.
 
-📜 Licença
+## 📜 Licença
 - Este projeto foi desenvolvido para fins de POC (Prova de Conceito).
 - A utilização em produção deve considerar políticas de segurança, performance e custos do Azure.
