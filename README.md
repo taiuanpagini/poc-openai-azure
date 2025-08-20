@@ -68,8 +68,7 @@ Extrai entidades de uma lista de itens em lote utilizando Azure OpenAI.
 
 ## ⚙️ Tecnologias Utilizadas
 - .NET 8 – Backend e APIs
-
-C# – Linguagem principal
+- C# – Linguagem principal
 - Azure OpenAI – Extração de entidades via IA
 - REST API – Comunicação entre sistemas
 - Application Insights (opcional) – Observabilidade
@@ -88,7 +87,7 @@ C# – Linguagem principal
   "AzureOpenAI": {
     "Endpoint": "https://SEU-ENDPOINT.openai.azure.com/",
     "ApiKey": "SUA-CHAVE-API",
-    "Deployment": "gpt-4o-mini"
+    "Deployment": "DEPLOY-CRIADO"
   }
 }
 ```
