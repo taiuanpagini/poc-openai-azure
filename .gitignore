@@ -1,0 +1,77 @@
+# Build results
+bin/
+obj/
+out/
+Debug/
+Release/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# Rider / VSCode / VS
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+*.tlog
+
+# Package restore
+*.nuget.props
+*.nuget.targets
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Coverage & Test
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+TestResults/
+nunit-*.xml
+
+# Publish
+publish/
+*.Publish.xml
+
+# Azure Functions local
+.local.settings.json
+functionapp.publish.settings
+appsettings.json
+appsettings.Development.json
+
+# Others
+*.dbmdl
+*.bak
+*.sql
+*.ldf
+*.mdf
+
+# Resharper / Rider
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# OS
+[Dd]esktop.ini
+[Tt]humbs.db
+ehthumbs.db
+*.DS_Store
+
+# Node (se usar algum frontend junto)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Docker
+*.pid

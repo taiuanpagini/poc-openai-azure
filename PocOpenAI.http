@@ -1,0 +1,6 @@
+@PocOpenAI_HostAddress = http://localhost:5137
+
+GET {{PocOpenAI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
