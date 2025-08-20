@@ -73,6 +73,43 @@ Extrai entidades de uma lista de itens em lote utilizando Azure OpenAI.
 - REST API – Comunicação entre sistemas
 - Application Insights (opcional) – Observabilidade
 
+## ☁️ Como Criar o Projeto no Azure OpenAI
+
+Antes de rodar a POC, você precisa criar o recurso Azure OpenAI no portal do Azure. Siga estes passos:
+
+1. **Acessar o Portal do Azure**
+   - Entre no [Portal do Azure](https://portal.azure.com/).
+
+2. **Criar um recurso Azure OpenAI**
+   - Clique em **Criar um recurso** > **IA + Machine Learning** > **Azure OpenAI**.
+   - Escolha:
+     - **Assinatura**: sua assinatura do Azure.
+     - **Grupo de Recursos**: ou crie um novo.
+     - **Nome**: defina um nome único para o recurso.
+     - **Região**: escolha uma região suportada pelo Azure OpenAI.
+
+3. **Definir o nível de preço**
+   - Selecione o plano compatível com o volume esperado de requisições (ex.: S0 para teste/POC).
+
+4. **Criar e acessar o recurso**
+   - Clique em **Revisar + Criar** e depois em **Criar**.
+   - Após a criação, vá até o recurso e copie:
+     - **Endpoint**: URL base do serviço.
+     - **Chave de API**: necessária para autenticação via `ApiKey`.
+
+5. **Criar o Deployment do modelo**
+   - Dentro do recurso, clique em **Explore Azure AI Foundry Portal**.
+   - Você será redirecionado para o portal do Foundry, onde poderá criar um deployment:
+     - **Nome do deployment**: por exemplo `gpt-4o-mini`.
+     - **Modelo**: escolha o modelo que deseja usar (ex.: GPT-4o ou GPT-4o-mini, na POC foi utilizado o modelo GPT-4o-mini pois o custo é bem menor).
+     - Clique em **Criar**.
+   - Esse **deployment name** será usado na sua aplicação para instanciar o cliente OpenAI.
+
+6. **Testar no portal**
+   - Use a aba **Test** no Foundry para enviar prompts e verificar o retorno do modelo antes de integrar na sua API.
+
+> 💡 Dica: você pode usar **Managed Identity** em vez de chave de API para autenticação mais segura, especialmente em produção.
+
 ## 🛠️ Como Clonar e Executar
 1. Clonar o repositório
 
