@@ -67,20 +67,21 @@ Extrai entidades de uma lista de itens em lote utilizando Azure OpenAI.
 - **O retorno vai variar conforme o prompt e também o schema desejado**
 
 ⚙️ Tecnologias Utilizadas
-.NET 8 – Backend e APIs
+- .NET 8 – Backend e APIs
 
 C# – Linguagem principal
-Azure OpenAI – Extração de entidades via IA
-REST API – Comunicação entre sistemas
-Application Insights (opcional) – Observabilidade
+- Azure OpenAI – Extração de entidades via IA
+- REST API – Comunicação entre sistemas
+- Application Insights (opcional) – Observabilidade
 
 🛠️ Como Clonar e Executar
 1. Clonar o repositório
 
-git clone https://github.com/seu-repositorio/azure-openai-poc.git
-cd azure-openai-poc
+- git clone https://github.com/seu-repositorio/azure-openai-poc.git
+- cd azure-openai-poc
+
 2. Configurar variáveis de ambiente
-No arquivo appsettings.json ou variáveis do ambiente, configure:
+- No arquivo appsettings.json ou variáveis do ambiente, configure:
 
 ```json
 {
@@ -93,33 +94,33 @@ No arquivo appsettings.json ou variáveis do ambiente, configure:
 ```
 
 3. Restaurar pacotes
-dotnet restore
+- dotnet restore
 
 4. Compilar e rodar
-dotnet run
+- dotnet run
 
-A aplicação iniciará por padrão na porta 5000.
+**A aplicação iniciará por padrão na porta 5000.**
 
 5. Testar endpoint
-Utilize curl, Postman ou Insomnia para testar:
+- Utilize curl, Postman ou Insomnia para testar:
 
 curl -X POST http://localhost:5000/extractBatchAzure \
   -H "Content-Type: application/json" \
   -d '{"items": ["Dipirona 500mg comprimido", "Luvas M"]}'
 
 📌 Observações
-O parâmetro temperature está configurado para controlar a "criatividade" do modelo:
+- O parâmetro temperature está configurado para controlar a "criatividade" do modelo:
 
-Valores baixos (ex: 0.0 – 0.3): respostas mais determinísticas.
+- Valores baixos (ex: 0.0 – 0.3): respostas mais determinísticas.
 
-Valores altos (ex: 0.7 – 1.0): respostas mais criativas.
+- Valores altos (ex: 0.7 – 1.0): respostas mais criativas.
 
-As respostas são sempre retornadas em JSON estruturado, de acordo com o schema definido.
+- As respostas são sempre retornadas em JSON estruturado, de acordo com o schema definido.
 
-Em caso de listas grandes, é possível usar batch requests para processar mais de um item por vez.
+- Em caso de listas grandes, é possível usar batch requests para processar mais de um item por vez.
 
-É recomendado monitorar o uso de tokens para evitar estouro de limite em prompts muito grandes.
+- É recomendado monitorar o uso de tokens para evitar estouro de limite em prompts muito grandes.
 
 📜 Licença
-Este projeto foi desenvolvido para fins de POC (Prova de Conceito).
-A utilização em produção deve considerar políticas de segurança, performance e custos do Azure.
+- Este projeto foi desenvolvido para fins de POC (Prova de Conceito).
+- A utilização em produção deve considerar políticas de segurança, performance e custos do Azure.
