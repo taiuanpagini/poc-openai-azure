@@ -33,8 +33,9 @@ Extrai entidades de uma lista de itens em lote utilizando Azure OpenAI.
     "Seringa descartável 10ml"
   ]
 }
+```
 
-Response Body (JSON):
+- **Response Body (JSON):**
 ```json
 {
   "results": [
@@ -61,6 +62,7 @@ Response Body (JSON):
     "total": 215
   }
 }
+```
 
 - **O retorno vai variar conforme o prompt e também o schema desejado**
 
@@ -88,6 +90,7 @@ No arquivo appsettings.json ou variáveis do ambiente, configure:
     "Deployment": "gpt-4o-mini"
   }
 }
+```
 
 3. Restaurar pacotes
 dotnet restore
