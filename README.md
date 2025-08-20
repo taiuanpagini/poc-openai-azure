@@ -104,9 +104,11 @@ C# – Linguagem principal
 5. Testar endpoint
 - Utilize curl, Postman ou Insomnia para testar:
 
+```bash
 curl -X POST http://localhost:5000/extractBatchAzure \
   -H "Content-Type: application/json" \
   -d '{"items": ["Dipirona 500mg comprimido", "Luvas M"]}'
+```
 
 ## 📌 Observações
 - O parâmetro temperature está configurado para controlar a "criatividade" do modelo:
